@@ -1,0 +1,30 @@
+#!/usr/bin/env sh
+
+# 确保脚本抛出遇到的错误 
+set -e
+
+# 输入打包命令后，在public目录中会出现生成的静态文件 
+yarn run build
+
+# 安装web服务器，Apache或者Nginx都可，不然系统中是没有/var/www/html/这个目录 
+# 将生成的静态文件转移到/var/www/html/，这样该目录下的内容就能通过IP来访问
+
+cp -r /blog/my-blog/public/* /blog/gh-pages
+
+# 将静态文件推送到Github的仓库中 
+
+git add -A 
+git commit -m 'deploy'
+git push -u origin master
+
+# 如果发布到 https://<USERNAME>.github.io/<REPO> 
+# git push -f git@github.com:<USERNAME>/<REPO>.git master:gh-pages
+
+# 如果发布到个人服务器中 
+# echo 'www.xxx.xxx' > CNAME
+
+cd -
+cd ghpages/ 
+git add -A 
+git commit -m "Finally ushered in a new deployment" 
+git push -u origin master
