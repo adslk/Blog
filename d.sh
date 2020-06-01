@@ -25,7 +25,7 @@ git push -u origin master
 # echo 'www.xxx.xxx' > CNAME
 
 cd -
-cd ghpages/ 
+cd gh-pages/ 
 git add -A 
 git commit -m "Finally ushered in a new deployment" 
 git push -u origin master
