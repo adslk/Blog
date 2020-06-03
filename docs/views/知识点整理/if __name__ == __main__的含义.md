@@ -2,9 +2,9 @@
 title: if __name__ == "__main__"的含义
 date: 2020-02-04
 tags:
- - 知识点
+ - Python
 categories:
- -  Python
+ - 编程语言
 ---
 
 ## 1.`__name__`变量

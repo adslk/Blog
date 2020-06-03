@@ -2,9 +2,9 @@
 title: pipenv 的基本用法
 date: 2020-02-02
 tags:
- - 环境搭建
-categories: 
  - Python
+categories: 
+ - 环境搭建
 ---
 
 ## 1.常见命令

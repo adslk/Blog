@@ -2,9 +2,9 @@
 title: Python中pip的常用设置
 date: 2020-01-15
 tags:
- - 环境搭建
+ - Python
 categories:
- -  Python
+ - 环境搭建
 ---
 
 ## 1.查看pip默认安装路径
