@@ -16,7 +16,7 @@ cp -r /d/Code_Space/Vue/blog/my-blog/public/* /d/Code_Space/Vue/blog/gh-pages
 
 git add -A 
 git commit -m 'deploy'
-
+git pull origin master
 git push -u origin master
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO> 
