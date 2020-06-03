@@ -10,7 +10,7 @@ npm run build
 # 安装web服务器，Apache或者Nginx都可，不然系统中是没有/var/www/html/这个目录 
 # 将生成的静态文件转移到/var/www/html/，这样该目录下的内容就能通过IP来访问
 
-cp -r /d/Code_Space/Vue/blog/my-blog/public/* /d/Code_Space/Vue/blog/gh-pages
+cp -fr /d/Code_Space/Vue/blog/my-blog/public/* /d/Code_Space/Vue/blog/gh-pages
 
 # 将静态文件推送到Github的仓库中 
 
