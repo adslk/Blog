@@ -28,6 +28,6 @@ git push -u origin master
 cd -
 cd /d/Code_Space/Vue/blog/gh-pages/ 
 git add -A 
-git commit -m "Finally ushered in a new deployment" 
+git commit -m "Finally ushered in a new deployment `date +%Y-%m-%d`" 
 git pull origin master
 git push -u origin master
