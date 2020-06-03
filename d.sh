@@ -16,6 +16,7 @@ cp -r /d/Code_Space/Vue/blog/my-blog/public/* /d/Code_Space/Vue/blog/gh-pages
 
 git add -A 
 git commit -m 'deploy'
+
 git push -u origin master
 
 # 如果发布到 https://<USERNAME>.github.io/<REPO> 
@@ -25,7 +26,8 @@ git push -u origin master
 # echo 'www.xxx.xxx' > CNAME
 
 cd -
-cd ../gh-pages/ 
+cd /d/Code_Space/Vue/blog/gh-pages/ 
 git add -A 
 git commit -m "Finally ushered in a new deployment" 
+git pull origin master
 git push -u origin master
